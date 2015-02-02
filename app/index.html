@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Page Transitions</title>
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+        <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/app.css">
+
+        <script src="bower_components/modernizr/modernizr.min.js"></script>
+    </head>
+    <body ng-app="pageTransitions" ng-class="pageClass">
+
+        <nav ui-nav></nav>
+
+        <div id="wrapper">
+            <div ng-class="pageClass" ng-view></div>
+        </div>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="common/directives/ui-icon-button/ui-icon-button.js"></script>
+        <script src="common/directives/ui-nav/ui-nav.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
